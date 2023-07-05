@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p>strong{
+    color: white;
+}
+.btn{
+    width: 100%;
+    text-align: start;
+}
+#bootcamp1{
+    background: #000;
+    color: white;
+    padding: 10px;
+}
+#bootcamp1:hover{
+    background: green;
+}
+#dropdown, #dropdown1, #dropdown2{
+    padding: 10px;
+}
+
+#certified{
+    background-color: rgb(253, 169, 183);
+}
+#website{
+    background-color: rgb(248, 231, 131);
+}
+#login{
+    background-color: blue;
+    color: white;
+}
+#MENU{
+    display: none;
+}
+#h1{
+    font-size: 40px;
+}
+#h1_everything{
+    font-size: 50px;
+}
+#box1{
+    width: 700px; 
+}
+#btn_apply{
+    width: 250px; 
+}
+#btn_pricing{
+    display: none;
+}
+#border_flo{
+    display: flex;
+    justify-content: space-between;
+}
+#border_flexible, #border_live, #border_online{
+    width: 32%;
+}
+#btn_apply1{
+    width: 120px;
+}
+#border_pay1{
+    display: flex;
+}
+#border_pay{
+    width: 45%;
+}
+#div_cer{
+    display: flex;
+}
+#text_cer{
+    width: 60%;
+}
+#photo_cer{
+    width: 40%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+#iconfa{
+    color: white;
+}
+#iconfa:hover{
+    background: white;
+    color: black;
+}
+
+@media only screen and (max-width: 1300px){
+    #bootcamp{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1160px){
+    #pro{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1066px){
+    #crwebsite{
+        display: none;
+    }
+    #h1{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #w3rocket{
+        display: none;
+    }
+    #p1{
+        width: 100%;
+    }
+    #border_pay1{
+        display: block;
+    }
+    #border_pay{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #div_cer{
+        display: block;
+    }
+    #text_cer{
+        width: 100%;
+    }
+    #photo_cer{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #certified{
+        display: none;
+    }
+    #box1{
+        width: 100%;
+    }
+    #border_flo{
+        display: block;
+    }
+    #border_flexible, #border_live, #border_online{
+        width: 100%;
+        margin-top: 10px
+    }
+}
+
+@media only screen and (max-width: 860px){
+    #dropdown1, #dropdown2, #dropdown, #bootcamp, #pro, #certified, #website{
+        display: none;
+    }
+    .navbar-nav{
+        justify-content: end;
+        display: flex;
+    }
+    #MENU{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #module{
+        width: 100px;
+    }
+    #icon{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #MENU1{
+        width: 15%;
+    }
+    #space{
+        display: none;
+    }
+    #btnnavbar{
+        display: flex;
+        justify-content: end;
+    }
+    #btn_apply{
+        width: 100%;
+    }
+    #pricing{
+        display: none;
+    }
+    #btn_pricing{
+        display: block;
+    }
+    #btn_apply1{
+        width: 100%;
+    }
+    #btn{
+        display: none;
+    }
+    #icon{
+        width: 60%;
+    }
+}
+

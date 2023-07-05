@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p>strong{
+    color: white;
+}
+.btn{
+    width: 100%;
+    text-align: start;
+}
+
+#certified{
+    background-color: rgb(253, 169, 183);
+}
+#website{
+    background-color: rgb(248, 231, 131);
+}
+#login{
+    background-color: blue;
+    color: white;
+}
+#learn-to-code{
+    font-size: 70px;
+    padding-top: 100px;
+}
+#with{
+    color: rgb(248, 195, 205);
+}
+#linknot{
+    color: white;
+}
+#linknot:hover{
+    color: green;
+}
+#bordercode, #bordercode1{
+    margin-top: 70px;
+}
+#smallbtn, #smallbtn1{
+    width: 20%;
+}
+#btnsmall{
+    padding-top: 3%;
+}
+#bordercoder{
+    width: 45%;
+}
+#btnvideo{
+    background-color: rgb(228, 200, 148);
+}
+#btnget{
+    background-color: pink;
+}
+.rounded{
+    box-shadow: 0 0 10px 0 gray;
+}
+
+#MENU{
+    display: none;
+}
+
+#inputbtn{
+    width: 500px;
+}
+#btntry{
+    width: 310px;
+}
+#btntry1{
+    width: 360px;
+}
+#tryit{
+    width: 940px;
+}
+#exandquizz{
+    font-size: 80px;
+}
+#imagetemplate{
+    width: 1000px;
+}
+#web-template{
+    font-size: 70px;
+}
+#browse{
+    width: 50%;
+}
+#imagevideo{
+    width: 840px;
+}
+#btngetstart{
+    width: 150px;
+}
+#textpink{
+    font-size: 40px;
+}
+#divslideshow{
+    height: 500px;
+}
+#QUIZZES, #SPACES{
+    width: 100px;
+}
+#EXCERCISES{
+    width: 120px;
+}
+#CERTIFICATES{
+    width: 140px;
+}
+#UPGRATE{
+    width: 100px;
+}
+#SUPPORT{
+    width: 110px;
+}
+#NEWSLETTER{
+    width: 130px;
+}
+#forum{
+    color: white;
+}
+#forum:hover{
+    color: green;
+}
+#iconfa{
+    color: white;
+}
+#iconfa:hover{
+    background: white;
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 1300px){
+    #bootcamp{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #NEWSLETTER{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1160px){
+    #pro{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1066px){
+    #crwebsite{
+        display: none;
+    }
+    #secure{
+        display: none;
+    }
+    #imagetemplate{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #example{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #bordercodephp{
+        width: 90%;
+    }
+    #bordercode{
+        width: 90%;
+        margin-top: 5%;
+    }
+    #bordercode1{
+        width: 90%;
+        margin-top: 5%;
+    }
+    #smallbtn{
+        width: 45%;
+    }
+    #smallbtn1{
+        width: 45%;
+        margin-top: 40px;
+    }
+    #secure{
+        display: block;
+    }
+    #bordercoder{
+        width: 95%;
+    }
+    #tryit{
+        width: 99%;
+    }
+    #imagehow{
+        display: none;
+    }
+    #imagegood{
+        width: 95%;
+    }
+    #divslideshow{
+        height: 490px;
+    }
+    #btnfooter1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #footerbtn{
+        width: 374px;
+        height: 250px;
+    }
+    #divforum{
+        width: 100%;
+        justify-content: center;
+    }
+    #UPGRATE, #SPACES, #SUPPORT, #NEWSLETTER{
+        width: 350px;
+        margin-top: 10px;
+        display: block; 
+    }
+    #CERTIFICATES{
+        width: 130px;
+    }
+    #QUIZZES{
+        width: 90px;
+    }
+    #EXCERCISE{
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #certified{
+        display: none;
+    }
+    #divslideshow{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #dropdown1, #dropdown2, #dropdown, #bootcamp, #pro, #certified, #website{
+        display: none;
+    }
+    .navbar-nav{
+        justify-content: end;
+        display: flex;
+    }
+    #MENU{
+        display: block;
+    }
+    .col-sm-7{
+        width: 40%;
+    }
+    #imagevideo{
+        width: 95%;
+    }
+    #divslideshow{
+        height: 440px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #learn-to-code{
+        font-size: 60px;
+    }
+    #divslideshow{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #Tutorialdropdown{
+        flex-direction: column;
+        display: flex;
+    }
+    #learn-to-code{
+        font-size: 50px;
+    }
+    #MENU1{
+        width: 20%;
+    }
+    #MENU{
+        margin-left: -50px;
+    }
+    #space{
+        display: none;
+    }
+    #inputbtn{
+        width: 80%;
+    }
+    .col-sm-7{
+        display: flex;
+        justify-content: end;
+    }
+    #example{
+        display: none;
+    }
+    #smallbtn{
+        width: 97%;
+        margin-top: 40px;
+    }
+    #smallbtn1{
+        width: 97%;
+    }
+    #btnsmall{
+        margin-top: -40px;
+    }
+    #btntry, #btntry1{
+        width: 100%;
+    }
+    #circle{
+        width: 90px;
+    }
+    #btnwww{
+        font-size: 12px;
+    }
+    #excerciseborder, #quizzborder{
+        width: 80%;
+        padding-bottom: 40px;
+    }
+    #browse{
+        width: 90%;
+    }
+    #divslideshow{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #textpink{
+        font-size: 30px;
+    }
+    #btngetstart1{
+        display: flex;
+        justify-content: center;
+    }
+    #btngetstart{
+        width: 80%;
+    }
+    #divslideshow{
+        height: 300px;
+    }
+    #QUIZZES, #EXCERCISES, #CERTIFICATES, #UPGRATE, #SPACES, #SUPPORT, #NEWSLETTER{
+        width: 100%;
+    }
+    #QUIZZES, #EXCERCISES, #CERTIFICATES{
+        margin-top: 10px;
+    }
+    #divforum{
+        margin-top: 100px
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #texttry{
+        font-size: 14px;
+    }
+    #web-template, #exandquizz{
+        font-size: 50px;
+    }
+    #divslideshow{
+        height: 250px;
+    }
+}

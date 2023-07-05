@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/22eec7c445.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="w3school_pro.css">
+    <link rel="icon" type="image/png" href="image/W3Schools_logo.png"/>
+    <title>
+        w3school/pro.com
+    </title>
+
+    <script> 
+        $(document).ready(function(){
+            $("#dropdown").click(function(){
+                $("#show").slideToggle();
+                $("#show1").hide();
+                $("#show2").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#dropdown1").click(function(){
+                $("#show1").slideToggle();
+                $("#show").hide();
+                $("#show2").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#dropdown2").click(function(){
+                $("#show2").slideToggle();
+                $("#show1").hide();
+                $("#show").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#btnfooter1").click(function(){
+                $("#para1").toggle();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#btnfooter2").click(function(){
+                $("#para2").toggle();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#btnfooter3").click(function(){
+                $("#para3").toggle();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#btnfooter4").click(function(){
+                $("#para4").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar  navbar-expand-sm bg-white p-3" style="width: 100%;">
+        <a href="w3school.html" class="navbar-brand ps-3">
+            <img src="image/W3Schools_logo.png" alt="logo" style="width: 50px">
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div class="dropdown" id="MENU1">
+                <a href="#" class="btn dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#responsivemenu" id="MENU"><b>Menu</b></a>
+            </div>
+        </a>
+        <div class="col-sm-4">
+            <ul class="navbar-nav" id="myTopnav">
+
+                <!-- Tutorials -->
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" class="btn nav-link active border-0 dropdown-toggle ps-2" data-bs-toggle="dropdown" data-bs-target="show" style="font-size: 16px;" id="dropdown"><b>Tutorials</b></a>
+                    </div>
+                </li>
+
+                <!-- Reference -->
+                <li class="nav-item ps-2">
+                    <div class="dropdown">
+                        <a href="#" class="btn nav-link active border-0 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="show1" style="font-size: 16px;" id="dropdown1"><b>References</b></a>
+                    </div>
+                </li>
+
+                <!-- Exercise -->
+                <li class="nav-item ps-2">
+                    <div class="dropdown">
+                        <a href="#" class="btn nav-link active border-0 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="show2" style="font-size: 16px;" id="dropdown2"><b>Exercises</b></a>
+                    </div>
+                </li>
+
+                <!-- bootcamp -->
+                <li class="nav-item ps-2" id="bootcamp">
+                    <a href="w3school_bootcamp.html" class="nav-link active btn border-0" style="font-size: 16px;"><b>Bootcamp</b></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-7">
+            <ul class="navbar-nav d-flex justify-content-end" id="myTopnav">
+
+                <!-- Pro btn -->
+                <li class="nav-item pe-2" id="pro">
+                    <a href="#" class="btn btn-dark nav-link active text-light rounded-5" style="font-size: 16px; width: 60px; text-align: center;"><b>Pro</b></a>
+                </li>
+
+                <!-- Get Certified -->
+                <li class="nav-item pe-2">
+                    <a href="#" class="nav-link btn rounded-5" style="font-size: 16px; width: 160px; text-align: center;" id="certified"><b>Get Certified</b></a>
+                </li>
+
+                <!-- Create Website -->
+                <li class="nav-item pe-2" id="crwebsite">
+                    <a href="#" class="nav-link btn rounded-5" style="font-size: 16px; width: 200px; text-align: center;" id="website">Create Website</a>
+                </li>
+
+                <!-- Space -->
+                <li class="nav-item pe-2" id="space">
+                    <a href="#" class="nav-link btn rounded-5 text-white" style="font-size: 16px; width: 100px; text-align: center; background: rgb(11, 194, 11);"><b>Space</b></a>
+                </li>
+
+                <!-- log in -->
+                <li class="nav-item pe-2">
+                    <a href="#" class="nav-link btn rounded-5" style="font-size: 16px; width: 90px; text-align: center;" id="login"><b>Log In</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tutorial -->
+    <div class="bg-dark collapse" id="show">
+        <div class="container pt-5">
+            <div class="w3-row-padding">
+                <h2 class="text-warning pb-3"><strong>Tutorials</strong></h2>
+                <div class="w3-quarter" id="paragraph">
+
+                    <!-- HTML and CSS -->
+                    <h3 class="text-warning pb-2"><strong>HTML and CSS</strong></h3>
+                    <p class="btn btn-dark"><strong>Learn HTML</strong></p>
+                    <p class="btn btn-dark"><strong>Learn CSS</strong></p>
+                    <p class="btn btn-dark"><strong>Learn RWD</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Boostrap</strong></p>
+                    <p class="btn btn-dark"><strong>Learn W3.CSS</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Colors</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Icons</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Graphics</strong></p>
+                    <p class="btn btn-dark"><strong>Learn SVG</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Cnavas</strong></p>
+                    <p class="btn btn-dark"><strong>Learn How To</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Sass</strong></p>
+                </div>
+                <div class="w3-quarter">
+
+                    <!-- JavaScript -->
+                    <h3 class="text-warning pb-2"><strong>JavaScript</strong></h3>
+                    <p class="btn btn-dark"><strong>Learn Javascript</strong></p>
+                    <p class="btn btn-dark"><strong>Learn React</strong></p>
+                    <p class="btn btn-dark"><strong>Learn AngularJS</strong></p>
+                    <p class="btn btn-dark"><strong>Learn JSON</strong></p>
+                    <p class="btn btn-dark"><strong>Learn AJAX</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Colors</strong></p>
+                    <p class="btn btn-dark"><strong>Learn AppML</strong></p>
+                    <p class="btn btn-dark"><strong>Learn W3.JS</strong></p>
+    
+                    <!-- Programming -->
+                    <h3 class="text-warning pb-2"><strong>Programming</strong></h3>
+                    <p class="btn btn-dark"><strong>Learn Python</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Java</strong></p>
+                    <p class="btn btn-dark"><strong>Learn C</strong></p>
+                    <p class="btn btn-dark"><strong>Learn C++</strong></p>
+                    <p class="btn btn-dark"><strong>Learn C#</strong></p>
+                    <p class="btn btn-dark"><strong>Learn R</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Kotlin</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Go</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Django</strong></p>
+                    <p class="btn btn-dark"><strong>Learn TypeScript</strong></p>
+                </div>
+    
+                <div class="w3-quarter">
+
+                    <!-- Server Side -->
+                    <h3 class="text-warning pb-2"><strong>Server Side</strong></h3>
+                    <p class="btn btn-dark"><strong>Learn SQL</strong></p>
+                    <p class="btn btn-dark"><strong>Learn MYSQL</strong></p>
+                    <p class="btn btn-dark"><strong>Learn PHP</strong></p>
+                    <p class="btn btn-dark"><strong>Learn ASP</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Node.js</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Raspberry Pi</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Git</strong></p>
+                    <p class="btn btn-dark"><strong>Learn MongoDB</strong></p>
+                    <p class="btn btn-dark"><strong>Learn AWS Cloude</strong></p>
+    
+                    <!-- Web Building -->
+                    <h3 class="text-warning pb-2"><strong>Web Building</strong></h3>
+                    <p class="btn btn-dark"><strong>Create a Website</strong><span class="btn btn-warning ms-1 pe-1" style="width: 40px; font-size: 10px;">NEW</span></p>
+                    <p class="btn btn-dark"><strong>Where To Start</strong></p>
+                    <p class="btn btn-dark"><strong>Web Templetes</strong></p>
+                    <p class="btn btn-dark"><strong>Web Statistics</strong></p>
+                    <p class="btn btn-dark"><strong>Web Certificates</strong></p>
+                    <p class="btn btn-dark"><strong>Web Development</strong></p>
+                    <p class="btn btn-dark"><strong>Code Editor</strong></p>
+                    <p class="btn btn-dark"><strong>Test Your Typing Speed</strong></p>
+                    <p class="btn btn-dark"><strong>Play a Code Game</strong></p>
+                    <p class="btn btn-dark"><strong>Cyber Security</strong></p>
+                    <p class="btn btn-dark"><strong>Accessibility</strong></p>
+                    <p class="btn btn-dark"><strong>Join our Newsletter</strong></p>
+                </div>
+    
+                <div class="w3-quarter">
+
+                    <!-- Data Analytics -->
+                    <h3 class="text-warning pb-2"><strong>Data Analytics</strong></h3>
+                    <p class="btn btn-dark"><strong>Learn Ai</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Machine Learning</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Data Science</strong></p>
+                    <p class="btn btn-dark"><strong>Learn NumPy</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Pandas</strong></p>
+                    <p class="btn btn-dark"><strong>Learn SciPy</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Matplotlib</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Statistics</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Excel</strong></p>
+                    <p class="btn btn-dark"><strong>Learn Google Sheets</strong></p>
+    
+                    <!-- XML Tutorial -->
+                    <h3 class="text-warning pb-2"><strong>XML Tutorials</strong></h3>
+                    <p class="btn btn-dark"><strong>Learn XML</strong></p>
+                    <p class="btn btn-dark"><strong>Learn XML AJAX</strong></p>
+                    <p class="btn btn-dark"><strong>Learn XML DOM</strong></p>
+                    <p class="btn btn-dark"><strong>Learn XML DTD</strong></p>
+                    <p class="btn btn-dark"><strong>Learn XML Schema</strong></p>
+                    <p class="btn btn-dark"><strong>Learn XSLT</strong></p>
+                    <p class="btn btn-dark"><strong>Learn XPath</strong></p>
+                    <p class="btn btn-dark"><strong>Learn XQuery</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark collapse" id="show1">
+        <div class="container pt-5">
+            <div class="w3-row-padding">
+
+                <!-- Reference -->
+                <h2 class="text-warning pb-3"><strong>References</strong></h2>
+                <div class="w3-quarter">
+                    <h3 class="text-warning pb-2"><strong>HTML</strong></h3>
+                    <p class="btn btn-dark"><strong>HTML Tag References</strong></p>
+                    <p class="btn btn-dark"><strong>HTML Browser Support</strong></p>
+                    <p class="btn btn-dark"><strong>HTML Event Reference</strong></p>
+                    <p class="btn btn-dark"><strong>HTML Color Reference</strong></p>
+                    <p class="btn btn-dark"><strong>HTML Attribute Reference</strong></p>
+                    <p class="btn btn-dark"><strong>HTML Canvas Reference</strong></p>
+                    <p class="btn btn-dark"><strong>HTML SVG Reference</strong></p>
+                    <p class="btn btn-dark"><strong>Google Maps Reference</strong></p>
+
+                    <!-- CSS -->
+                    <h3 class="text-warning pb-2"><strong>CSS</strong></h3>
+                    <p class="btn btn-dark"><strong>CSS Reference</strong></p>
+                    <p class="btn btn-dark"><strong>CSS Browser Support</strong></p>
+                    <p class="btn btn-dark"><strong>CSS Selector Reference</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 3 Reference</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 4 Reference</strong></p>
+                    <p class="btn btn-dark"><strong>W3.CSS Reference</strong></p>
+                    <p class="btn btn-dark"><strong>Icon Reference</strong></p>
+                    <p class="btn btn-dark"><strong>Sass Reference</strong></p>
+                </div>
+                <div class="w3-quarter">
+
+                    <!-- JavaScript -->
+                    <h3 class="text-warning pb-2"><strong>JavaScript</strong></h3>
+                    <p class="btn btn-dark"><strong>JavaScript Reference</strong></p>
+                    <p class="btn btn-dark"><strong>HTML DOM Reference</strong></p>
+                    <p class="btn btn-dark"><strong>jQuery Reference</strong></p>
+                    <p class="btn btn-dark"><strong>AngularJS Reference</strong></p>
+                    <p class="btn btn-dark"><strong>W3.JS Reference</strong></p>
+
+                    <!-- Programming -->
+                    <h3 class="text-warning pb-2"><strong>Programming</strong></h3>
+                    <p class="btn btn-dark"><strong>Python Reference</strong></p>
+                    <p class="btn btn-dark"><strong>Java Reference</strong></p>
+                </div>
+                
+                <div class="w3-quarter">
+
+                    <!-- Server Side -->
+                    <h3 class="text-warning pb-2"><strong>Server Side</strong></h3>
+                    <p class="btn btn-dark"><strong>SQL Reference</strong></p>
+                    <p class="btn btn-dark"><strong>MySQL Reference</strong></p>
+                    <p class="btn btn-dark"><strong>PHP Reference</strong></p>
+                    <p class="btn btn-dark"><strong>ASP Reference</strong></p>
+
+                    <!-- XML -->
+                    <h3 class="text-warning pb-2"><strong>XML</strong></h3>
+                    <p class="btn btn-dark"><strong>XML DOM Reference</strong></p>
+                    <p class="btn btn-dark"><strong>XML Http Reference</strong></p>
+                    <p class="btn btn-dark"><strong>XSLT Reference</strong></p>
+                    <p class="btn btn-dark"><strong>XML Schema Reference</strong></p>
+                </div>
+    
+                <div class="w3-quarter">
+
+                    <!-- Character Sets -->
+                    <h3 class="text-warning pb-2"><strong>Character Sets</strong></h3>
+                    <p class="btn btn-dark"><strong>HTML Character Sets</strong></p>
+                    <p class="btn btn-dark"><strong>HTML ASCII</strong></p>
+                    <p class="btn btn-dark"><strong>HTML ANSI</strong></p>
+                    <p class="btn btn-dark"><strong>HTML Windows-1252</strong></p>
+                    <p class="btn btn-dark"><strong>HTML ISO-8859-1</strong></p>
+                    <p class="btn btn-dark"><strong>HTML Stmbols</strong></p>
+                    <p class="btn btn-dark"><strong>HTML UTF-8</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark collapse" id="show2">
+        <div class="container pt-5">
+            <div class="w3-row-padding">
+
+                <!-- Exercises and Quizzes -->
+                <h2 class="text-warning pb-3"><strong>Exercises and Quizzes</strong></h2>
+                <div class="w3-quarter">
+
+                    <!-- Exercises -->
+                    <h3 class="pb-2 btn btn-warning" style="width: 50%;"><strong>Exercises</strong></h3>
+                    <p class="btn btn-dark"><strong>HTML Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>CSS Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>JavaScript Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Python Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>SQL Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>PHP Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Java Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>C Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>C++ Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>C# Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>jQuery Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>React.js Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>MySQL Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 5 Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 4 Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 3 Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>NumPy Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Pandas Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>SciPy Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>TypeScript Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Excel Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>R Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Git Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Kotlin Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>Go Exercises</strong></p>
+                    <p class="btn btn-dark"><strong>MongoDB Exercises</strong></p>
+                </div>
+                <div class="w3-quarter">
+
+                    <!-- Quizzes -->
+                    <h3 class="pb-2 btn btn-warning" style="width: 50%;"><strong>Quizzes</strong></h3>
+                    <p class="btn btn-dark"><strong>HTML Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>CSS Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>JavaScript Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Python Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>SQL Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>PHP Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Java Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>C Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>C++ Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>C# Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>jQuery Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>React.js Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>MySQL Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 5 Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 4 Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 3 Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>JavaScript Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>NumPy Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Pandas Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>SciPy Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>TypeScript Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>XML Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>R Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Git Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Kotlin Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Cyber Security Quizz</strong></p>
+                    <p class="btn btn-dark"><strong>Accessibility Quizz</strong></p>
+                </div>
+                
+                <div class="w3-quarter">
+
+                    <!-- Courses -->
+                    <h3 class="pb-2 btn btn-warning" style="width: 50%;"><strong>Courses</strong></h3>
+                    <p class="btn btn-dark"><strong>HTML Courses</strong></p>
+                    <p class="btn btn-dark"><strong>CSS Courses</strong></p>
+                    <p class="btn btn-dark"><strong>JavaScript Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Front End Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Python Courses</strong></p>
+                    <p class="btn btn-dark"><strong>SQL Courses</strong></p>
+                    <p class="btn btn-dark"><strong>PHP Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Java Courses</strong></p>
+                    <p class="btn btn-dark"><strong>C++ Courses</strong></p>
+                    <p class="btn btn-dark"><strong>C# Courses</strong></p>
+                    <p class="btn btn-dark"><strong>jQuery Courses</strong></p>
+                    <p class="btn btn-dark"><strong>React.js Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 4 Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 3 Courses</strong></p>
+                    <p class="btn btn-dark"><strong>NumPy Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Pandas Courses</strong></p>
+                    <p class="btn btn-dark"><strong>TypeScript Courses</strong></p>
+                    <p class="btn btn-dark"><strong>XML Courses</strong></p>
+                    <p class="btn btn-dark"><strong>R Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Data Analytics Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Cyber Security Courses</strong></p>
+                    <p class="btn btn-dark"><strong>Accessibility Courses</strong></p>
+                </div>
+    
+                <div class="w3-quarter">
+
+                    <!-- Certificates -->
+                    <h3 class="pb-2 btn btn-warning" style="width: 50%;"><strong>Certificates</strong></h3>
+                    <p class="btn btn-dark"><strong>HTML Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>CSS Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>JavaScript Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Front End Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Python Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>SQL Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>PHP Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Java Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>C++ Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>C# Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>jQuery Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>React.js Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>MySQL Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 5 Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 4 Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Boostrap 3 Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>TypeScript Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>XML Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Excel Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Data Analytics Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Cyber Security Certificate</strong></p>
+                    <p class="btn btn-dark"><strong>Accessibility Certificate</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: rgb(227, 235, 241);" id="responsivemenu" class="collapse">
+        <div class="container-fluid pt-2">
+            <div class="dropdown p-5" style="width: 100%;">
+
+                <!-- Tutorial -->
+                <a href="#" class="btn dropdown-toggle border-0 justify-content-center d-flex" data-bs-toggle="dropdown" style="width: 100%; font-size: 20px;"><b>Tutorials</b></a>
+                <ul class="dropdown-menu bg-dark p-3" style="width: 100%;">
+                    <li class="dropdown-item"><h2 class="text-warning"><b>Tutorials</b></h2></li>
+                    <li class="dropdown-item pt-3">
+                        <div class="row" id="Tutorialdropdown">
+                            <div class="col-sm-6">
+                                
+                                <!-- HTML and CSS -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2">HTML and CSS</h3>
+                                    <p class="btn btn-dark"><strong>Learn HTML</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn CSS</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn RWD</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Boostrap</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn W3.CSS</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Colors</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Icons</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Graphics</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn SVG</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Cnavas</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn How To</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Sass</strong></p>
+                                </div>
+
+                                <!-- data Analytics -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning">Data Analytics</h3>
+                                    <p class="btn btn-dark"><strong>Learn Ai</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Machine Learning</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Data Science</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn NumPy</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Pandas</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn SciPy</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Matplotlib</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Statistics</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Excel</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Google Sheets</strong></p>
+                                </div>
+
+                                <!-- XML titorials -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2">XML Tutorials</h3>
+                                    <p class="btn btn-dark"><strong>Learn XML</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn XML AJAX</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn XML DOM</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn XML DTD</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn XML Schema</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn XSLT</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn XPath</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn XQuery</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+
+                                <!-- Javascript -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2">JavaScript</h3>
+                                    <p class="btn btn-dark"><b>Learn Javascript</b></p>
+                                    <p class="btn btn-dark"><strong>Learn React</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn AngularJS</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn JSON</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn AJAX</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Colors</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn AppML</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn W3.JS</strong></p>
+                                </div>
+
+                                <!-- programming -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2">Programming</h3>
+                                    <p class="btn btn-dark"><strong>Learn Python</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Java</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn C</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn C++</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn C#</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn R</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Kotlin</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Go</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Django</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn TypeScript</strong></p>
+                                </div>
+
+                                <!-- Server side -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2">Server Side</h3>
+                                    <p class="btn btn-dark"><strong>Learn SQL</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn MYSQL</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn PHP</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn ASP</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Node.js</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Raspberry Pi</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn Git</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn MongoDB</strong></p>
+                                    <p class="btn btn-dark"><strong>Learn AWS Cloude</strong></p>
+                                </div>
+
+                                <!-- Web Building -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2">Web Building</h3>
+                                    <p class="btn btn-dark"><strong>Create a Website</strong></p>
+                                    <p class="btn btn-dark"><strong>Where To Start</strong></p>
+                                    <p class="btn btn-dark"><strong>Web Templetes</strong></p>
+                                    <p class="btn btn-dark"><strong>Web Statistics</strong></p>
+                                    <p class="btn btn-dark"><strong>Web Certificates</strong></p>
+                                    <p class="btn btn-dark"><strong>Web Development</strong></p>
+                                    <p class="btn btn-dark"><strong>Code Editor</strong></p>
+                                    <p class="btn btn-dark"><strong>Test Your Typing Speed</strong></p>
+                                    <p class="btn btn-dark"><strong>Play a Code Game</strong></p>
+                                    <p class="btn btn-dark"><strong>Cyber Security</strong></p>
+                                    <p class="btn btn-dark"><strong>Accessibility</strong></p>
+                                    <p class="btn btn-dark"><strong>Join our Newsletter</strong></p>
+                                </div>                                                              
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Reference -->
+                <a href="#" class="btn dropdown-toggle border-0 justify-content-center d-flex" data-bs-toggle="dropdown" style="width: 100%; font-size: 20px;"><b>References</b></a>
+                <ul class="dropdown-menu bg-dark p-3" style="width: 100%;">
+                    <li class="dropdown-item"><h2 class="text-warning"><b>References</b></h2></li>
+                    <li class="dropdown-item pt-3">
+                        <div class="row" id="Tutorialdropdown">
+                            <div class="col-sm-6">
+                                
+                                <!-- HTML -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2"><strong>HTML</strong></h3>
+                                    <p class="btn btn-dark"><strong>HTML Tag References</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML Browser Support</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML Event Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML Color Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML Attribute Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML Canvas Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML SVG Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>Google Maps Reference</strong></p>
+
+                                </div>
+
+                                <!-- CSS -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2"><strong>CSS</strong></h3>
+                                    <p class="btn btn-dark"><strong>CSS Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>CSS Browser Support</strong></p>
+                                    <p class="btn btn-dark"><strong>CSS Selector Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 3 Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 4 Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>W3.CSS Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>Icon Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>Sass Reference</strong></p>
+                                </div>
+
+                                <!-- Character Sets -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2"><strong>Character Sets</strong></h3>
+                                    <p class="btn btn-dark"><strong>HTML Character Sets</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML ASCII</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML ANSI</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML Windows-1252</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML ISO-8859-1</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML Stmbols</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML UTF-8</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+
+                                <!-- Javascript -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2"><strong>JavaScript</strong></h3>
+                                    <p class="btn btn-dark"><strong>JavaScript Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>HTML DOM Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>jQuery Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>AngularJS Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>W3.JS Reference</strong></p>
+                                </div>
+
+                                <!-- programming -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2"><strong>Programming</strong></h3>
+                                    <p class="btn btn-dark"><strong>Python Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>Java Reference</strong></p>
+                                </div>
+
+                                <!-- Server side -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2"><strong>Server Side</strong></h3>
+                                    <p class="btn btn-dark"><strong>SQL Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>MySQL Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>PHP Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>ASP Reference</strong></p>
+                                </div>
+
+                                <!-- XML -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="text-warning pb-2"><strong>XML</strong></h3>
+                                    <p class="btn btn-dark"><strong>XML DOM Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>XML Http Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>XSLT Reference</strong></p>
+                                    <p class="btn btn-dark"><strong>XML Schema Reference</strong></p>
+                                </div>                                                              
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Excercise and quizz -->
+                <a href="#" class="btn dropdown-toggle border-0 justify-content-center d-flex" data-bs-toggle="dropdown" style="width: 100%; font-size: 20px;"><b>Excercises</b></a>
+                <ul class="dropdown-menu bg-dark p-3" style="width: 100%;">
+                    <li class="dropdown-item"><h2 class="text-warning"><b>Excercises and Quizzes</b></h2></li>
+                    <li class="dropdown-item pt-3">
+                        <div class="row" id="Tutorialdropdown">
+                            <div class="col-sm-6">
+                                
+                                <!-- Exercises -->
+                                <div style="flex-direction: column; display: flex;">
+
+                                    <h3 class="pb-2 btn rounded text-dark bg-warning" style="width: 50%;"><strong>Exercises</strong></h3>
+                                    <p class="btn btn-dark"><strong>HTML Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>CSS Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>JavaScript Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Python Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>SQL Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>PHP Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Java Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>C Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>C++ Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>C# Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>jQuery Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>React.js Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>MySQL Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 5 Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 4 Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 3 Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>NumPy Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Pandas Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>SciPy Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>TypeScript Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Excel Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>R Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Git Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Kotlin Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>Go Exercises</strong></p>
+                                    <p class="btn btn-dark"><strong>MongoDB Exercises</strong></p>
+
+                                <!-- Courses -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="pb-2 btn bg-warning text-dark rounded" style="width: 50%;"><strong>Courses</strong></h3>
+                                    <p class="btn btn-dark"><strong>HTML Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>CSS Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>JavaScript Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Front End Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Python Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>SQL Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>PHP Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Java Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>C++ Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>C# Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>jQuery Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>React.js Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 4 Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 3 Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>NumPy Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Pandas Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>TypeScript Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>XML Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>R Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Data Analytics Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Cyber Security Courses</strong></p>
+                                    <p class="btn btn-dark"><strong>Accessibility Courses</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+
+                                <!-- Quizzes -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="pb-2 btn bg-warning text-dark rounded" style="width: 50%;"><strong>Quizzes</strong></h3>
+                                    <p class="btn btn-dark"><strong>HTML Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>CSS Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>JavaScript Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Python Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>SQL Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>PHP Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Java Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>C Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>C++ Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>C# Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>jQuery Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>React.js Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>MySQL Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 5 Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 4 Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 3 Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>JavaScript Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>NumPy Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Pandas Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>SciPy Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>TypeScript Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>XML Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>R Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Git Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Kotlin Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Cyber Security Quizz</strong></p>
+                                    <p class="btn btn-dark"><strong>Accessibility Quizz</strong></p>
+                                </div>
+
+                                <!-- Certificates -->
+                                <div style="flex-direction: column; display: flex;">
+                                    <h3 class="pb-2 btn bg-warning text-dark rounded" style="width: 50%;"><strong>Certificates</strong></h3>
+                                    <p class="btn btn-dark"><strong>HTML Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>CSS Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>JavaScript Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Front End Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Python Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>SQL Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>PHP Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Java Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>C++ Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>C# Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>jQuery Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>React.js Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>MySQL Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 5 Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 4 Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Boostrap 3 Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>TypeScript Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>XML Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Excel Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Data Analytics Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Cyber Security Certificate</strong></p>
+                                    <p class="btn btn-dark"><strong>Accessibility Certificate</strong></p>
+                                </div>                                                              
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn border-0 justify-content-center d-flex" style="width: 100%; font-size: 20px;"><b>Get Certified</b></a>
+                <a href="#" class="btn border-0 justify-content-center d-flex" style="width: 100%; font-size: 20px;"><b>Sign Up</b></a>
+                <a href="#" class="btn border-0 justify-content-center d-flex" style="width: 100%; font-size: 20px;"><b>PRO</b></a>
+                <a href="#" class="btn border-0 justify-content-center d-flex" style="width: 100%; font-size: 20px;"><b>Spaces</b></a>
+                <a href="#" class="btn border-0 justify-content-center d-flex" style="width: 100%; font-size: 20px;"><b>Bootcamp</b></a>
+                <a href="#" class="btn border-0 justify-content-center d-flex" style="width: 100%; font-size: 20px;"><b>Videos</b></a>
+                <a href="#" class="btn border-0 justify-content-center d-flex" style="width: 100%; font-size: 20px;"><b>Shop</b></a>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%; text-align: center; padding-top: 100px;" class="bg-dark container-fluid pb-5">
+        <h1 style="color: white;" id="h1"><strong>Become a PRO User</strong></h1>
+        <p style="font-size: 22px; color: pink;" class="pt-4">Unlock powerful features:</p>
+        <div class="d-flex justify-content-center" style="width: 100%;">
+            <div style="flex-direction: column; display: flex;">
+                <div class="d-flex">
+                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 20px; color: rgb(211, 208, 208);"></i>
+                    <p style="font-size: 18px;" class=" text-white ps-2"><b>Browser W3Schools without ads</b></p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 20px; color: rgb(211, 208, 208);"></i>
+                    <p style="font-size: 18px;" class=" text-white ps-2"><b>Website hosting(includes <span><a href="#">Spaces</a></span> PRO)</b></p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 20px; color: rgb(211, 208, 208);"></i>
+                    <p style="font-size: 18px;" class="text-white ps-2"><b>Access to our <span><a href="$">HTML Video Tutorial</a></span></b></p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-success rounded-5 pt-3 mt-5" style="width: 300px; height: 60px; font-size: 18px; text-align: center;">Subscribe for $4.99 /month</a>
+
+        <div class="row pt-5">
+            <div class="container pt-5 pb-3 rounded" style="text-align: center; background: rgb(255, 238, 241);" id="border1">
+                <p style="font-size: 40px;"><b>No More Ads</b></p>
+                <p>Learn without any distractions</p>
+                <img src="image/unnamed (2).png" style="width: 70%; padding-top: 10px;">
+            </div>
+
+            <div class="container pt-5 pb-3 rounded" style="text-align: center; background: rgb(215, 238, 238);" id="border2">
+                <p style="font-size: 40px;"><b>More Spaces</b></p>
+                <p>Unlock the option to create more W3Schools Spaces</p>
+                <img src="image/unnamed (3).png" style="width: 70%; padding-top: 10px;">
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div class="container pt-5 pb-3 rounded" style="text-align: center; background: rgb(186, 230, 240);" id="border1">
+                <p style="font-size: 40px;"><b>HTML Video</b></p>
+                <p>Get full access to W3Schools HTML Video</p>
+                <img src="image/unnamed (4).png" style="width: 70%; padding-top: 10px;">
+            </div>
+
+            <div class="container pt-5 pb-3 rounded" style="text-align: center; background: rgb(247, 253, 191);" id="border2">
+                <p style="font-size: 40px;"><b>Hosting Benefits!</b></p>
+                <p>Gain more storage and expand your monthly limitations</p>
+                <img src="image/unnamed (5).png" style="width: 70%; padding-top: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-5 pb-5">
+        <div class="container-fluid" style="text-align: center;">
+            <p style="font-size: 35px;"><b>Learn from proven tutorials used by millions of learnings!</b></p>
+            <div class="container">
+                <p><b>Our platform has been used by learners for over 23 years, with a continously growing audience of learners and constantly updated and inproved learning material!</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 pb-5" id="border_flo">
+        <div class="rounded p-2" id="border_flexible">
+            <p class="text-secondary">Monthly visits</p>
+            <p style="font-size: 25px;"><b>70m+</b></p>
+        </div>
+        <div class="rounded p-2" id="border_flexible">
+            <p class="text-secondary">Yearly pageviews</p>
+            <p style="font-size: 25px;"><b>3bn+</b></p>
+        </div>
+        <div class="rounded p-2" id="border_flexible">
+            <p class="text-secondary"><span><a href="#">Spaces</a></span> created</p>
+            <p style="font-size: 25px;"><b>1m+</b></p>
+        </div>
+    </div>
+
+    <div style="margin-top: -11px;" class="bg-dark pb-5 pt-5 container-fluid">
+        <div style="text-align: center;">
+            <h1 class="text-white pb-4" style="font-size: 70px;"><strong>W3Schools Spaces</strong></h1>
+            <p style="color: white; font-size: 23px;">If you want to create your own website, check out <span><a href="#" style="color: pink;">W3Schools Spaces</a></span>.</p>
+            <p style="font-size: 23px; color: white; padding-bottom: 50px;">It is free to use, and does not require any setup:</p>
+            <img src="image/w3schoolvideo1.gif" id="imagevideo">
+            <div class="d-flex justify-content-center">
+                <img src="image/w3schoolvideo2.png" style="padding-top: 50px; width: 80%;" id="imagehow">
+            </div>
+            <a href="#" class="btn btn-success rounded-5 mt-5 p-2" style="font-size: 16px; width: 250px; text-align: center;"><b>Sign Up For Free</b></a><br>
+            <a href="#" class="btn rounded-5 mt-4 p-2 border-warning" style="font-size: 16px; width: 250px; text-align: center;" id="btn_read_more"><b>Read More</b></a>
+        </div>
+    </div>
+
+    <div class="pt-5 pb-5">
+        <div class="container-fluid pt-5" style="text-align: center;">
+            <p style="font-size: 35px;"><b>Subscription Plans</b></p>
+            <p class="pt-3 pb-4"><b>Pick Your Perfect Plan</b></p>
+            <div class="d-flex justify-content-center">
+                <p style="font-size: 12px; padding-top: 3px; padding-right: 10px;">Monthly</p>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <p class="ms-3" style="font-size: 12px; padding-top: 3px;">Yearly (get 2 months for free)</p>
+            </div>
+
+            <div class="pt-5" id="divborder3">
+                <div class="rounded-5 border-success border p-4" style="text-align: center;" id="border3">
+                    <p style="font-size: 30px;"><b>Free</b></p>
+                    <p style="font-size: 12px;">Become a W3Schooler</p>
+                    <img src="image/download.png" style="width: 30%;">
+                    <p style="font-size: 14px; padding-top: 20px;">Improve Your Learning Experience</p>
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <div style="flex-direction: column; display: flex;">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black"></i>
+                                <p style="font-size: 13px;" class=" text-dark ps-2"><b>My Learning</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class=" text-dark ps-2"><b>Public Profile</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>W3Schools Community</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>1 Basic Space</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>W3Spaces Subdomain</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>SSL Certificate</b></p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="" class="btn btn-success rounded-5 text-white p-2" style="text-align: center; width: 120px;"><b>Sign Up</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="rounded-5 border-success border p-4" style="text-align: center; background: rgb(212, 238, 241);" id="border3">
+                    <p style="font-size: 30px;"><b>Pro</b></p>
+                    <p style="font-size: 12px;">Build and host your frontend projects</p>
+                    <div style="text-align: center;">
+                        <p><b><span style="font-size: 40px; color: green;">$4.99</span>/month</b></p>
+                        <p style="margin-top: -5px;">All Free</p>
+                        <p style="margin-top: -10px;">+</p>
+                    </div>
+                    <div class="d-flex justify-content-center" style="width: 100%;">
+                        <div style="flex-direction: column; display: flex;">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black"></i>
+                                <p style="font-size: 13px;" class=" text-dark ps-2"><b>Ad Free Browsing</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class=" text-dark ps-2"><b>Analytics</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>10 Basic Spaces</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>HTML Video Tutorial</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>Priority Support</b></p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>Cancel Analytime</b></p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="" class="btn btn-success rounded-5 text-white p-2" style="text-align: center; width: 120px;"><b>Get Pro</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-5 border-success border p-4" style="text-align: center; background: white;" id="border3">
+                    <p style="font-size: 30px;"><b>Premium</b></p>
+                    <p style="font-size: 12px;">Get backend support and all you need to build a web app</p>
+                    <div style="text-align: center;">
+                        <p><b><span style="font-size: 40px; color: green;">$9.99</span>/month</b></p>
+                        <p style="margin-top: -5px;">All Pro</p>
+                        <p style="margin-top: -10px;">+ upgraded to</p>
+                        <p style="font-size: 35px;"><b>15</b></p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                            <p style="font-size: 13px;" class="text-dark ps-2"><b>Basic Spaces</b></p>
+                        </div>
+                        <p style="font-size: 35px;"><b>1</b></p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                            <p style="font-size: 13px;" class="text-dark ps-2"><b>Fullstack Space</b></p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="btn btn-dark rounded-5 text-white p-2" style="text-align: center; width: 150px;"><b>Get Premium</b></a>
+                    </div>
+                </div>
+
+                <div class="rounded-5 border-success border p-4" style="text-align: center; background: white;" id="border3">
+                    <p style="font-size: 30px;"><b>Diamond</b></p>
+                    <p style="font-size: 12px;">Get more server power for professionals and businesses</p>
+                    <div style="text-align: center;">
+                        <p><b><span style="font-size: 40px; color: green;">$29.99</span>/month</b></p>
+                        <p style="margin-top: -5px;">All Premium</p>
+                        <p style="margin-top: -10px;">+ upgraded to</p>
+                        <p style="font-size: 35px;"><b>20</b></p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                            <p style="font-size: 13px;" class="text-dark ps-2"><b>Basic Spaces</b></p>
+                        </div>
+                        <p style="font-size: 35px;"><b>3</b></p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                            <p style="font-size: 13px;" class="text-dark ps-2"><b>Fullstack Space</b></p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="btn btn-success rounded-5 text-white p-2" style="text-align: center; width: 150px;"><b>Get Diamond</b></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="border3hidden">
+                <div class="d-flex justify-content-center pt-5" id="border3hidden1">
+                    <div class="rounded-5 border-success border p-4 me-3" style="text-align: center;" id="border3">
+                        <p style="font-size: 30px;"><b>Free</b></p>
+                        <p style="font-size: 12px;">Become a W3Schooler</p>
+                        <img src="image/download.png" style="width: 30%;">
+                        <p style="font-size: 14px; padding-top: 20px;">Improve Your Learning Experience</p>
+                        <div class="d-flex justify-content-center" style="width: 100%;">
+                            <div style="flex-direction: column; display: flex;">
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black"></i>
+                                    <p style="font-size: 13px;" class=" text-dark ps-2"><b>My Learning</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class=" text-dark ps-2"><b>Public Profile</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>W3Schools Community</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>1 Basic Space</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>W3Spaces Subdomain</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>SSL Certificate</b></p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="btn btn-success rounded-5 text-white p-2" style="text-align: center; width: 120px;"><b>Sign Up</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="rounded-5 border-success border p-4" style="text-align: center; background: rgb(212, 238, 241);" id="border3">
+                        <p style="font-size: 30px;"><b>Pro</b></p>
+                        <p style="font-size: 12px;">Build and host your frontend projects</p>
+                        <div style="text-align: center;">
+                            <p><b><span style="font-size: 40px; color: green;">$4.99</span>/month</b></p>
+                            <p style="margin-top: -5px;">All Free</p>
+                            <p style="margin-top: -10px;">+</p>
+                        </div>
+                        <div class="d-flex justify-content-center" style="width: 100%;">
+                            <div style="flex-direction: column; display: flex;">
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black"></i>
+                                    <p style="font-size: 13px;" class=" text-dark ps-2"><b>Ad Free Browsing</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class=" text-dark ps-2"><b>Analytics</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>10 Basic Spaces</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>HTML Video Tutorial</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>Priority Support</b></p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                    <p style="font-size: 13px;" class="text-dark ps-2"><b>Cancel Analytime</b></p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="btn btn-success rounded-5 text-white p-2" style="text-align: center; width: 120px;"><b>Get Pro</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex justify-content-center pt-3" id="border3hidden1">
+                    <div class="rounded-5 border-success border p-4 me-3" style="text-align: center; background: white;" id="border3">
+                        <p style="font-size: 30px;"><b>Premium</b></p>
+                        <p style="font-size: 12px;">Get backend support and all you need to build a web app</p>
+                        <div style="text-align: center;">
+                            <p><b><span style="font-size: 40px; color: green;">$9.99</span>/month</b></p>
+                            <p style="margin-top: -5px;">All Pro</p>
+                            <p style="margin-top: -10px;">+ upgraded to</p>
+                            <p style="font-size: 35px;"><b>15</b></p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>Basic Spaces</b></p>
+                            </div>
+                            <p style="font-size: 35px;"><b>1</b></p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>Fullstack Space</b></p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-dark rounded-5 text-white p-2" style="text-align: center; width: 150px;"><b>Get Premium</b></a>
+                        </div>
+                    </div>
+    
+                    <div class="rounded-5 border-success border p-4" style="text-align: center; background: white;" id="border3">
+                        <p style="font-size: 30px;"><b>Diamond</b></p>
+                        <p style="font-size: 12px;">Get more server power for professionals and businesses</p>
+                        <div style="text-align: center;">
+                            <p><b><span style="font-size: 40px; color: green;">$29.99</span>/month</b></p>
+                            <p style="margin-top: -5px;">All Premium</p>
+                            <p style="margin-top: -10px;">+ upgraded to</p>
+                            <p style="font-size: 35px;"><b>20</b></p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>Basic Spaces</b></p>
+                            </div>
+                            <p style="font-size: 35px;"><b>3</b></p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-solid fa-circle-check pt-1" style="font-size: 16px; color: black;"></i>
+                                <p style="font-size: 13px;" class="text-dark ps-2"><b>Fullstack Space</b></p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-success rounded-5 text-white p-2" style="text-align: center; width: 150px;"><b>Get Diamond</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="pt-5"><b>Looking to add multiple users?</b></p>
+            <a href="" class="text-success"><b>Read here for how to get in touch</b></a>
+
+        </div>
+    </div>
+
+    <div class="bg-dark p-5">
+        <div class="container pt-5" style="text-align: center;">
+            <p class="text-white" style="font-size: 40px;"><b>HTML Video Tutorial</b></p>
+            <p class="p-3 text-white" style="font-size: 20px;"><b>Get full access to our popular HTML Video Tutorial.</b></p>
+            <p class="text-white pb-3">Click the play button for a sneak peek:</p>
+            <div class="d-flex justify-content-center">
+                <p class="bg-white rounded" style="width: 70%; text-align: center; font-size: 40px; padding: 200px;">Video</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-5 pb-5" style="background-color: rgb(247, 229, 150);">
+        <div class="container-fluid pt-5">
+            <p style="font-size: 40px; text-align: center;"><b>What our learners say about us</b></p>
+            <div class="pt-3" id="border4">
+                <div class="bg-white container-fluid rounded-5" id="border4_1">
+                    <p class="pt-5" style="font-size: 40px; text-align: center;"><b>Ahmed Y.</b></p>
+                    <p style="text-align: center;">"It's a very good platform for learning. Breaks each step down and it is so easy to understand , you can also learn, write and run code on the go as it has ide(run environment) that are integrated into the browser. I highly recommend!!!"</p>
+                </div>
+
+                <div class="bg-white container-fluid rounded-5" id="border4_1">
+                    <p class="pt-5" style="font-size: 40px; text-align: center;"><b>Mina A.</b></p>
+                    <p style="text-align: center;">"It is very helpful and simple. I just really love it. Thank you so much."</p>
+                </div>
+            </div>
+
+            <div class="pt-3" id="border4_2">
+                <div class="bg-white container-fluid rounded-5" id="border4_1">
+                    <p class="pt-5" style="font-size: 40px; text-align: center;"><b>Cornelius K.</b></p>
+                    <p style="text-align: center;">"I find the continuous layout and the structured structure in the descriptions very good. So you can find a lot of information very quickly."</p>
+                </div>
+
+                <div class="bg-white container-fluid rounded-5" id="border4_1">
+                    <p class="pt-5" style="font-size: 40px; text-align: center;"><b>Sudhakar K.</b></p>
+                    <p style="text-align: center;">"Programming isn't that easy for me. But after being learnt from w3schools, I have gained confidence and empowered my skills. God bless W3schools. Now I am able to help students to get thorough knowledge on concepts with W3Schools help."</p>
+                </div>
+            </div>
+
+           <div class="d-flex justify-content-center">
+                <a href="" class="btn btn-success text-white p-3 rounded-5 mt-5" style="width: 250px; text-align: center; font-size: 18px;"><b>Get started today</b></a>
+           </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="pt-5 pb-5 bg-dark">
+            <div class="container pt-5">
+                <a href="#para1" class="btn btn-warning rounded d-flex" id="btnfooter1">
+                    <i class="fa-solid fa-chevron-down pt-3"></i>
+                    <p class="m-2"><b>What's the dofference between Pro, Premium and Diamond subscription plans?</b></p>              
+                </a>
+                <p style="background-color: lightgray;" class="p-3 rounded collapse" id="para1">
+                    Check out <span><a href="">our plans here</a></span> to view the difference.
+                </p>
+
+                <a href="#para2" class="btn btn-warning rounded d-flex mt-3" id="btnfooter2">
+                    <i class="fa-solid fa-chevron-down pt-3"></i>
+                    <p class="m-2"><b>How are subscriptions renewed?</b></p>              
+                </a>
+                <p style="background-color: lightgray;" class="p-3 rounded collapse" id="para2">
+                    Your subscription will be automatically renewed every month.
+                </p>
+
+                <a href="#para3" class="btn btn-warning rounded d-flex mt-3" id="btnfooter3">
+                    <i class="fa-solid fa-chevron-down pt-3"></i>
+                    <p class="m-2"><b>What happens if I cancel my subscription?</b></p>              
+                </a>
+                <p style="background-color: lightgray;" class="p-3 rounded collapse" id="para3">
+                    Your access to all the benefits for the paid period of time will continue, however the subscription will not be renewed automatically. 
+                </p>
+
+                <a href="#para4" class="btn btn-warning rounded d-flex mt-3" id="btnfooter4">
+                    <i class="fa-solid fa-chevron-down pt-3"></i>
+                    <p class="m-2"><b>Can I subscribe multiple accounts at once?</b></p>              
+                </a>
+                <div style="background-color: lightgray;" class="p-3 rounded collapse" id="para4">
+                    To subscripe W3Schools accounts for multiple users, you can contact sales@w3schools.com
+                </div>
+            </div>
+
+            <p class="pt-5 text-white" style="text-align: center; font-size: 18px;"><b>Have some questions?</b> <span><a href=""><b>Visit our support page</b></a></span></p>
+
+            <div class="d-flex justify-content-center pt-4">
+                <a href="#" class="btn btn-success rounded-5 text-white p-3" style="width: 400px; font-size: 18px; text-align: center;"><b>Subscribe for $4.99 /month</b></a>
+            </div>
+            <p style="font-size: 16px; color: white; padding-top: 20px; text-align: center;">Cancel anytime.</p>
+
+            <div class="row" style="width: 100%; justify-content: end; display: flex;">
+                <div class="d-flex" style="width: 300px;">
+                    <a href="#" class="btn fa-brands fa-square-facebook p-4" style="font-size: 20px;" id="iconfa"></a>
+                    <a href="#" class="btn fa-brands fa-instagram p-4" style="font-size: 20px;" id="iconfa"></a>
+                    <a href="#" class="btn fa-brands fa-linkedin p-4" style="font-size: 20px;" id="iconfa"></a>
+                    <a href="#" class="btn fa-brands fa-discord p-4" style="font-size: 20px;" id="iconfa"></a>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <p style="text-align: center; color: white;">W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <span><a href=""> term of use</a></span>, <span><a href=""> cookie and privacy policy</a></span>. <span><a href="">Copyright 1999-2023</a></span> by Refsnes Data. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
