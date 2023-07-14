@@ -17,7 +17,7 @@ p>strong{
 #website{
     background-color: rgb(248, 231, 131);
 }
-#login{
+#signup{
     background-color: blue;
     color: white;
 }
@@ -126,6 +126,10 @@ p>strong{
 #iconfa:hover{
     background: white;
     color: black;
+}
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 
