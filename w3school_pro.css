@@ -20,7 +20,7 @@ p>strong{
 #website{
     background-color: rgb(248, 231, 131);
 }
-#login{
+#signup{
     background-color: blue;
     color: white;
 }
@@ -133,6 +133,11 @@ input:checked + .slider:before {
     color: black;
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 
 @media only screen and (max-width: 1300px){
     #bootcamp{
@@ -146,6 +151,7 @@ input:checked + .slider:before {
     }
     #divborder3{
         display: none;
+        
     }
     #border3hidden{
         display: block;
@@ -227,12 +233,21 @@ input:checked + .slider:before {
     #h1{
         font-size: 40px; 
     }
-
+    #border3hidden{
+        margin-left: 24%;
+    }
+    #border3hidden1{
+        flex-direction: column;
+        margin-top: -15px;
+    }
+    #border3{
+        margin-top: 10px;
+    }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 500px){
     #border3hidden{
-        margin-left: 22%;
+        margin-left: 10%;
     }
     #border3hidden1{
         flex-direction: column;
