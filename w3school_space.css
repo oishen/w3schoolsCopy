@@ -6,6 +6,9 @@
 p>strong{
     color: white;
 }
+#MENU{
+    display: none;
+}
 .btn{
     width: 100%;
     text-align: start;
@@ -21,330 +24,29 @@ p>strong{
     background-color: blue;
     color: white;
 }
-#learn-to-code{
-    font-size: 70px;
-    padding-top: 100px;
+#h1{
+    font-size: 50px; 
 }
-#with{
-    color: rgb(248, 195, 205);
+#border1, #border2{
+    width: 40%;
 }
-#linknot{
-    color: white;
+#border_flo{
+    display: flex;
+    justify-content: space-between;
 }
-#linknot:hover{
-    color: green;
-}
-#bordercode, #bordercode1{
-    margin-top: 70px;
-}
-#smallbtn, #smallbtn1{
-    width: 20%;
-}
-#btnsmall{
-    padding-top: 3%;
-}
-#bordercoder{
-    width: 45%;
-}
-#btnvideo{
-    background-color: rgb(228, 200, 148);
-}
-#btnget{
-    background-color: pink;
-}
-.rounded{
-    box-shadow: 0 0 10px 0 gray;
-}
-
-#MENU{
-    display: none;
-}
-
-#inputbtn{
-    width: 500px;
-}
-#btntry{
-    width: 310px;
-}
-#btntry1{
-    width: 360px;
-}
-#tryit{
-    width: 940px;
-}
-#exandquizz{
-    font-size: 80px;
-}
-#imagetemplate{
-    width: 1000px;
-}
-#web-template{
-    font-size: 70px;
-}
-#browse{
-    width: 50%;
+#border_flexible{
+    width: 32%;
+    background: silver;
 }
 #imagevideo{
     width: 840px;
 }
-#btngetstart{
-    width: 150px;
-}
-#textpink{
-    font-size: 40px;
-}
-#divslideshow{
-    height: 500px;
-}
-#QUIZZES, #SPACES{
-    width: 100px;
-}
-#EXCERCISES{
-    width: 120px;
-}
-#CERTIFICATES{
-    width: 140px;
-}
-#UPGRATE{
-    width: 100px;
-}
-#SUPPORT{
-    width: 110px;
-}
-#NEWSLETTER{
-    width: 130px;
-}
-#forum{
+#btn_read_more{
     color: white;
 }
-#forum:hover{
-    color: green;
-}
-#iconfa{
-    color: white;
-}
-#iconfa:hover{
-    background: white;
+#btn_read_more:hover{
+    background: pink;
     color: black;
-}
-
-/*new adding*/
-#background-image1{
-    background-image: url(p1_space.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    opacity: 0.2;
-}
-#background-color1{
-    background-color: black;
-}
-#text-section1{
-    position: absolute; 
-    top: 70%; 
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-#h1-section1{
-    color: white;
-    font-size: 60px;
-}
-#btn-section1{
-    width: 200px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 30px;
-}
-#img-section1{
-    width: 60px;
-}
-#video-section2{
-    width: 900px;
-}
-#section2{
-    text-align: center;
-}
-#block1-section2{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding-top: 50px;
-}
-#img1-section2{
-    width: 90px;
-}
-#img2-section2{
-    width: 64px;
-}
-#img3-section2{
-    width: 90px;
-}
-#block1-section4{
-    width: 350px;
-}
-#btn-section4{
-    width: 120px;
-    text-align: center;
-    margin-top: 10px;
-    border-radius: 30px;
-}
-#btn-section4:hover{
-    background: #198754;
-}
-#div-section4{
-    width: 800px;
-    margin: 0 auto;
-    justify-content: space-around;
-    margin-top: 40px;
-    display: flex;
-}
-#spaces{
-    display: none;
-}
-#btn1-section4{
-    width: 300px;
-    margin-top: 30px; 
-    border-radius: 30px; 
-    padding: 10px; 
-    text-align: center;
-}
-#btn1-section4:hover{
-    background: #198754;
-}
-#btn2-section4{
-    width: 230px;
-    margin-top: 30px; 
-    border-radius: 30px; 
-    padding: 10px; 
-    text-align: center;
-}
-#section5{
-    background-color: #198754;
-    text-align: center;
-    padding-top: 50px;
-    color: white;
-}
-#block-section5{
-    width: 900px;
-    margin: 0 auto;
-    margin-top: 60px;
-    display: flex;
-}
-#div1-section5{
-    width: 450px;
-    text-align: start;
-}
-#div2-section5{
-    width: 450px;
-}
-#img-section5{
-    width: 100%;
-}
-#section6{
-    background-color: #282A35;
-    padding: 50px;
-    text-align: center;
-}
-#img-section6{
-    width: 940px;
-}
-#section7{
-    background-color: #D9EEE1;
-    text-align: center;
-    padding: 50px;
-}
-#block1-section7{
-    width: 600px; 
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-
-}
-#section8{
-    display: flex;
-}
-#img-section8{
-    width: 100%;
-}
-#section9{
-    display: flex;
-    background-color: #D9EEE1;
-    padding: 40px;
-}
-#img-section9{
-    width: 80%;
-}
-#section10{
-    display: flex;
-}
-#block1-section10{
-    margin: auto 0;
-}
-#img-section10{
-    width: 100%;
-}
-#section11{
-    display: flex;
-    padding: 40px;
-}
-#block1-section11{
-    margin: auto 0;
-    padding-left: 10px;
-}
-#img-section11{
-    width: 100%;
-}
-#section12{
-    display: flex;
-    padding: 40px;
-}
-#block1-section12{
-    margin: auto 0;
-    padding-left: 10px;
-}
-#img-section12{
-    width: 100%;
-}
-#section13{
-    display: flex;
-    padding: 40px;
-}
-#block1-section13{
-    margin: auto 0;
-    padding-left: 10px;
-}
-#img-section13{
-    width: 100%;
-}
-#section14{
-    display: flex;
-    padding: 40px;
-}
-#block1-section14{
-    margin: auto 0;
-    padding-left: 10px;
-}
-#img-section14{
-    width: 100%;
-}
-#section15{
-    background-color: black;
-    height: 500px;
-    padding: 60px;
-    text-align: center;
-}
-#section16{
-    background-color: #D9EEE1;
-    text-align: center;
-    height: 500px;
-}
-#img-section16{
-    width: 600px; 
-    margin-top: -100px;
 }
 .switch {
     position: relative;
@@ -430,37 +132,75 @@ input:checked + .slider:before {
     background: white;
     color: black;
 }
-#block-section17{
-    margin: auto 0; 
-    margin-top: 45px;
-    display: flex;
-    text-align: center;
+#background-color{
+    background-color: black;
 }
-#btn-section17{
-    background-color: #FFC0C7; 
-    height: 40px; 
-    width: 120px; 
-    padding: 10px; 
+#background-img{
+    background-image: url(sign_p1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    padding: 10px;
+}
+#h1-section1{
+    font-size: 60px;
+}
+#section2{
+    display: flex;
+    justify-content: space-around;
+}
+#block-section2{
+    color: white; 
+    text-align: 
+    start; width: 280px; 
+}
+#img-section3{
+    width: 600px; 
+    padding-bottom: 40px;
+}
+#section4{
+    display: flex;
+}
+#img-section4{
+    width: 450px; 
+    margin-top: -50px; 
+    border: 1px solid white; 
+    border-radius: 10px;
+}
+#img-section5{
+    width: 900px;
+}
+#btn1-section6{
+    width: 200px; 
     text-align: center; 
+    padding: 10px; 
     border-radius: 30px; 
-    margin-left: 20px;
+    border: 1px solid #DC3545; 
+    color: white;
+}
+#btn1-section6:hover{
+    background: #DC3545;
 }
 
 body::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
-
+#block-section7{
+    display: flex;
+    justify-content: center;
+}
+#block1-section7{
+    display: flex;
+    justify-content: center;
+}
 
 
 @media only screen and (max-width: 1300px){
     #bootcamp{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1200px){
-    #NEWSLETTER{
         display: none;
     }
 }
@@ -475,198 +215,23 @@ body::-webkit-scrollbar {
     #border3hidden{
         display: block;
     }
+    #block-section7{
+        display: block;
+        text-align: center;
+    }
+    #block1-section7{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 1066px){
     #crwebsite{
         display: none;
     }
-    #secure{
-        display: none;
-    }
-    #imagetemplate{
-        width: 95%;
-    }
 }
 
 @media only screen and (max-width: 992px){
-    #example{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    #bordercodephp{
-        width: 90%;
-    }
-    #bordercode{
-        width: 90%;
-        margin-top: 5%;
-    }
-    #bordercode1{
-        width: 90%;
-        margin-top: 5%;
-    }
-    #smallbtn{
-        width: 45%;
-    }
-    #smallbtn1{
-        width: 45%;
-        margin-top: 40px;
-    }
-    #secure{
-        display: block;
-    }
-    #bordercoder{
-        width: 95%;
-    }
-    #tryit{
-        width: 99%;
-    }
-    #imagehow{
-        display: none;
-    }
-    #imagegood{
-        width: 95%;
-    }
-    #divslideshow{
-        height: 490px;
-    }
-    #btnfooter1{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    #footerbtn{
-        width: 374px;
-        height: 250px;
-    }
-    #divforum{
-        width: 100%;
-        justify-content: center;
-    }
-    #UPGRATE, #SPACES, #SUPPORT, #NEWSLETTER{
-        width: 350px;
-        margin-top: 10px;
-        display: block; 
-    }
-    #CERTIFICATES{
-        width: 130px;
-    }
-    #QUIZZES{
-        width: 90px;
-    }
-    #EXCERCISE{
-        width: 110px;
-    }
-    #img-section1{
-        width: 40px;
-        height: 40px;
-    }
-    #video-section2{
-        width: 90%;
-    }
-    #block-section5{
-        display: block;
-        width: 100%;
-    }
-    #div1-section5{
-        width: 100%;
-        text-align: center;
-    }
-    #div2-section5{
-        width: 100%;
-    }
-    #img-section5{
-        width: 50%;
-        margin-top: 30px;
-    }
-    #img-section6{
-        width: 100%;
-    }
-    #section8{
-        display: block;
-    }
-    #block1-section8{
-        width: 100%;
-        margin-top: 40px;
-    }
-    #img-section8{
-        width: 100%;
-    }
-    #section9{
-        display: block;
-        text-align: center;
-    }
-    #block1-section9{
-        width: 100%;
-    }
-    #img-section9{
-        width: 60%;
-        padding-bottom: 30px;
-    }
-    #section10{
-        display: block;
-        text-align: center;
-    }
-    #block1-section10{
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    #img-section10{
-        width: 90%;
-        padding-bottom: 30px;
-    }
-    #section11{
-        display: block;
-        text-align: center;
-    }
-    #block1-section11{
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    #img-section11{
-        width: 90%;
-        padding-bottom: 30px;
-    }
-    #section12{
-        display: block;
-        text-align: center;
-    }
-    #block1-section12{
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    #img-section12{
-        width: 90%;
-        padding-bottom: 30px;
-    }
-    #section13{
-        display: block;
-        text-align: center;
-    }
-    #block1-section13{
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    #img-section13{
-        width: 90%;
-        padding-bottom: 30px;
-    }
-    #section14{
-        display: block;
-        text-align: center;
-    }
-    #block1-section14{
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    #img-section14{
-        width: 90%;
-        padding-bottom: 30px;
-    }
-    #img-section16{
-        width: 70%;
-    }
     #border2{
         width: 90%;
         margin-top: 50px;
@@ -684,132 +249,94 @@ body::-webkit-scrollbar {
     #border4_2{
         margin-top: -15px;
     }
+    #h1-section1{
+        font-size: 40px;
+    }
+    #section2{
+        display: block;
+        text-align: center;
+    }
+    #block-section2{
+        width: 100%;
+        margin-top: 20px;
+    }
+    #imagegood{
+        width: 95%;
+    }
+    #section4{
+        display: block;
+        text-align: center;
+    }
+    #img-section4{
+        width: 80%;
+    }
+    #img-section5{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 900px){
     #certified{
         display: none;
     }
-    #divslideshow{
-        height: 450px;
-    }
-    #div-section4{
+    #border_flo{
         display: block;
+    }
+    #border_flexible{
         width: 100%;
-    }
-    #block1-section4{
-        width: 50vw;
-        display: block;
-        margin: 0 auto;
-    }
-    #spaces{
-        display: block;
+        margin-top: 10px
     }
 }
 
 @media screen and (max-width: 860px) {
-    #dropdown1, #dropdown2, #dropdown, #bootcamp, #pro, #certified, #website{
+    #dropdown1, #dropdown2, #dropdown, #bootcamp, #pro, #certified{
         display: none;
     }
     .navbar-nav{
         justify-content: end;
         display: flex;
     }
-    #MENU{
-        display: block;
-    }
     .col-sm-7{
         width: 40%;
+    }
+    #MENU{
+        display: block;
     }
     #imagevideo{
         width: 95%;
     }
-    #divslideshow{
-        height: 440px;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    #learn-to-code{
-        font-size: 60px;
-    }
-    #divslideshow{
-        height: 400px;
-    }
-    #block-section17{
-        display: block;
-    }
-    #btn-section17{
-        margin: 0 auto;
+    #img-section3{
+        width: 95%;   
     }
 }
 
 @media only screen and (max-width: 700px){
-    #block1-section7{
-        display: block;
-        width: 200px;
+    #h1-section1{
+        font-size: 25px;
     }
 }
 
 @media only screen and (max-width: 600px){
-    #Tutorialdropdown{
-        flex-direction: column;
-        display: flex;
-    }
-    #learn-to-code{
-        font-size: 50px;
-    }
     #MENU1{
         width: 20%;
     }
     #MENU{
-        margin-left: -50px;
-    }
-    #space{
-        display: none;
-    }
-    #inputbtn{
-        width: 80%;
+        margin-left: -20px;
     }
     .col-sm-7{
         display: flex;
         justify-content: end;
     }
-    #example{
+    #space{
         display: none;
     }
-    #smallbtn{
-        width: 97%;
-        margin-top: 40px;
+    #h1{
+        font-size: 40px; 
     }
-    #smallbtn1{
-        width: 97%;
-    }
-    #btnsmall{
-        margin-top: -40px;
-    }
-    #btntry, #btntry1{
-        width: 100%;
-    }
-    #circle{
-        width: 90px;
-    }
-    #btnwww{
-        font-size: 12px;
-    }
-    #excerciseborder, #quizzborder{
-        width: 80%;
-        padding-bottom: 40px;
-    }
-    #browse{
-        width: 90%;
-    }
-    #divslideshow{
-        height: 350px;
-    }
-    #block1-section2{
-        width: 100%;
-    }
+
+}
+
+@media only screen and (max-width: 550px){
     #border3hidden{
         margin-left: 22%;
     }
@@ -819,42 +346,5 @@ body::-webkit-scrollbar {
     }
     #border3{
         margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    #textpink{
-        font-size: 30px;
-    }
-    #btngetstart1{
-        display: flex;
-        justify-content: center;
-    }
-    #btngetstart{
-        width: 80%;
-    }
-    #divslideshow{
-        height: 300px;
-    }
-    #QUIZZES, #EXCERCISES, #CERTIFICATES, #UPGRATE, #SPACES, #SUPPORT, #NEWSLETTER{
-        width: 100%;
-    }
-    #QUIZZES, #EXCERCISES, #CERTIFICATES{
-        margin-top: 10px;
-    }
-    #divforum{
-        margin-top: 100px
-    }
-}
-
-@media only screen and (max-width: 400px){
-    #texttry{
-        font-size: 14px;
-    }
-    #web-template, #exandquizz{
-        font-size: 50px;
-    }
-    #divslideshow{
-        height: 250px;
     }
 }
