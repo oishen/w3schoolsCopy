@@ -22,17 +22,21 @@ p>strong{
     color: white;
 }
 #learn-to-code{
-    font-size: 70px;
+    font-size: 60px;
     padding-top: 100px;
 }
 #with{
     color: rgb(248, 195, 205);
+    text-align: center;
 }
 #linknot{
     color: white;
 }
 #linknot:hover{
     color: green;
+}
+#htmltext{
+    font-size: 60px;
 }
 #bordercode, #bordercode1{
     margin-top: 70px;
@@ -46,11 +50,10 @@ p>strong{
 #bordercoder{
     width: 45%;
 }
-#btnvideo{
-    background-color: rgb(228, 200, 148);
-}
-#btnget{
-    background-color: pink;
+#htmlsec-btn{ 
+    width: 250px;
+    padding: 10px;  
+    text-align: center;
 }
 .rounded{
     box-shadow: 0 0 10px 0 gray;
@@ -134,11 +137,6 @@ body::-webkit-scrollbar {
 
 
 
-@media only screen and (max-width: 1300px){
-    #bootcamp{
-        display: none;
-    }
-}
 
 @media only screen and (max-width: 1200px){
     #NEWSLETTER{
@@ -245,7 +243,7 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 860px) {
-    #dropdown1, #dropdown2, #dropdown, #bootcamp, #pro, #certified, #website{
+    #tutorial, #reference, #excercise, #bootcamp, #pro, #certified, #website{
         display: none;
     }
     .navbar-nav{
